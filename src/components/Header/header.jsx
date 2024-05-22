@@ -1,8 +1,8 @@
-import style from "../Header/header.module.css"
-import Logo from "../../assets/img/logo-menu.svg"
+import style from "../Header/header.module.css";
+import Logo from "../../assets/img/logo-menu.svg";
 
 const Header = () => {
-  return(
+  return (
     <header>
       <div className={style.headerWrapper}>
         <div className={style.headerLogo}>
@@ -19,11 +19,17 @@ const Header = () => {
               <a href="#">FAQ</a>
             </li>
           </ul>
-          <div className={style.headerBtn}>
-            <button className={style.loginBtn}>Login</button>
-            <button className={style.RegistroBtn}>Registro</button>
-          </div>
         </nav>
+        <div>
+          <ul className={style.headerBtn}>
+            <li>
+              <button className={style.loginBtn}>Login</button>
+            </li>
+            <li>
+              <button className={style.registroBtn}>Registro</button>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
   );
